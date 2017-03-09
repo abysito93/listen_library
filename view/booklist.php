@@ -1,21 +1,27 @@
 <html>
 <head></head>
 
-<body>
+    <body>
 
-<table>
-<tbody><tr><td>Title</td><td>Author</td><td>Description</td></tbody>
+    <table>
+        <tbody>
+            <tr>
+                <td>Title</td>
+                <td>Author</td>
+                <td>Description</td>
+            </tr>
+        </tbody>
 
-<?php
+        <?php
 
-foreach($books as $title => $book){
-    echo '<tr><td><a href="index.php?book='.$book->title.'"></a></td><td>'.$book->author.'</td><td>'.$book->description.'</td><tr>';
+            foreach($books as $title => $book){
+                echo '<tr><td><a href="index.php?book='.$book->title.'">'.$book->title.'</a></td><td>'.$book->author.'</td><td>'.$book->description.'</td><tr>';
 
-}
+            }
 
-?>
+        ?>
 
-</table>
+    </table>
 
-</body>
+    </body>
 </html>
